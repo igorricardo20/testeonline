@@ -56,7 +56,7 @@ app.use(function(req,res,next){
 
 load('models').then('controllers').then('routes').into(app);
 
-var port = process.en.PORT || 5000;
+var port = process.env.PORT || 5000;
 
 app.listen(port, function() {
     console.log('Express server listening on port '+port);

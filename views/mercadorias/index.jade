@@ -36,7 +36,7 @@ block content
 							td #{valor.quantidade}
 							td #{valor.preco}
 							td #{valor.negocio}
-							td #{momento(valor.data_cadastro).locale().format('lll')}
+							td #{momento(valor.data_cadastro).format('lll')}
 							td
 								a(href="/mercadorias/show/#{valor._id}", class="btn btn-info")
 									span(class="glyphicon glyphicon-search")

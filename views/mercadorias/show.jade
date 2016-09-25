@@ -13,7 +13,7 @@ block content
 	p
 		b Tipo de negócio: #{dados.negocio}
 	p
-		b Data de cadastro (GMT +0): #{momento(dados.data_cadastro).format('DD/MM/YYYY HH:MM:ss')}
+		b Data de cadastro (GMT +0): #{momento(dados.data_cadastro).format('LLL')}
 	br
 	form(method="POST",action="/mercadorias/delete/#{dados._id}", role="form", id="excluir-form")
 		button(type="submit",class="btn btn-danger") Excluir

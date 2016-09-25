@@ -6,7 +6,7 @@ module.exports = function(){
 		tipo: {type: String, trim: true},
 		nome : {type: String, trim: true},
 		quantidade: {type: Number, trim:true},
-		preco: {type: Number, trim:true},
+		preco: {type: String, trim:true},
 		negocio: {type: String},
 		data_cadastro: {type: Date, default: Date.now}
 	});

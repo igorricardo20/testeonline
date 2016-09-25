@@ -5,9 +5,10 @@ componentes utilizados no projeto:
 Node.js;
 bootstrap;
 express;
-Banco de dados: mongodb (livraria para node: mongoose);
+MongoDB (livraria para node.js: mongoose, Cloud-host: mongolab);
 javascript;
 jade;
 jquery;
-Heroku;
-mongolab;
+json;
+Heroku.
+

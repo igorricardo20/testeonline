@@ -12,7 +12,7 @@ var express          = require('express'),
 	expressValidator = require('express-validator');
 
 //conexão com o banco de dados (mongodb)
-mongoose.connect('mongodb://igorricardo20:igorW@1234@ds041546.mlab.com:41546/testeonline', function(err){
+mongoose.connect('mongodb://igorwytsk@outlook.com:igorW@1234@ds041546.mlab.com:41546/testeonline', function(err){
 	if(err){
 		console.log("Erro ao conectar no mongodb: "+err);
 	}else{

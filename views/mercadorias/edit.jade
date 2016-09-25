@@ -1,0 +1,31 @@
+extends ../layout
+
+block content
+	h1 Atualizar mercadoria
+	hr
+	br
+	if messages.erro
+		div(class="alert alert-danger")
+			p #{messages.erro}
+		br
+	form(method="POST", action="/mercadorias/edit/#{dados._id}", role="form")
+		div(class="form-group")
+			label Tipo:
+			input(type="text", class="form-control", name="tipo", placeholder="Tipo", value="#{dados.tipo}", autofocus)
+		div(class="form-group")
+			label Nome:
+			input(type="text", class="form-control", name="nome", placeholder="Nome", value="#{dados.nome}")
+		div(class="form-group")
+			label Quantidade:
+			input(type="number", class="form-control", name="quantidade",placeholder="Quantidade", value="#{dados.quantidade}")
+		div(class="form-group")
+			label Preço:
+			input(type="number", class="form-control", name="preco", placeholder="Preço", value="#{dados.preco}")
+		div(class="form-group")
+			label Negócio:
+			input(type="text", class="form-control", name="negocio", placeholder="Compra/Venda", value="#{dados.negocio}")
+			
+		button(type="submit", class="btn btn-success") Salvar
+		br
+		br
+		a(href="/mercadorias", class="btn btn-primary") Voltar

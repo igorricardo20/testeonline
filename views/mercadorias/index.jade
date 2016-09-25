@@ -1,0 +1,47 @@
+extends ../layout
+
+block content
+	h1 Mercadorias
+	br
+	a(href="mercadorias/cadastro",class="btn btn-success") Cadastrar mercadoria
+	br
+	br
+	if messages.erro
+		div(class="alert alert-danger")
+			p #{messages.erro}
+		br
+	if messages.info
+		div(class="alert alert-success")
+			p #{messages.info}
+		br
+	if lista.length > 0
+		table(class="table table-striped")
+			thead
+				tr
+					th ID:
+					th Tipo:
+					th Nome:
+					th Quantidade:
+					th Preço:
+					th Tipo do negocio:
+					th Data:
+					th Ações:
+			tbody
+				each valor in lista
+					tr
+						td #{valor._id}
+						td #{valor.tipo}
+						td #{valor.nome}
+						td #{valor.quantidade}
+						td #{valor.preco}
+						td #{valor.negocio}
+						td #{momento(valor.data_cadastro).format('DD/MM/YYYY HH:MM:ss')}
+						td
+							a(href="/mercadorias/show/#{valor._id}", class="btn btn-info")
+								span(class="glyphicon glyphicon-search")
+							a(href="/mercadorias/edit/#{valor._id}", class="btn btn-primary")
+								span(class="glyphicon glyphicon-pencil")
+
+	else
+		br
+		p Nenhum registro encontrado!

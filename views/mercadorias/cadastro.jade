@@ -1,0 +1,34 @@
+extends ../layout
+
+block content
+	h1 Cadastro de Mercadorias
+	hr
+	br
+	if messages.erro
+		div(class="alert alert-danger")
+			each msg in messages.erro
+				b= msg
+				br
+		br
+	form(method="POST", action="/mercadorias/cadastro", role="form")
+		div(class="form-group")
+			label Tipo:
+			input(type="text", class="form-control", name="tipo", placeholder="Tipo", autofocus)
+		div(class="form-group")
+			label Nome:
+			input(type="text", class="form-control", name="nome", placeholder="Nome")
+		div(class="form-group")
+			label Quantidade:
+			input(type="number", class="form-control", name="quantidade",placeholder="Quantidade")
+		div(class="form-group")
+			label Preço:
+			input(type="number", class="form-control", name="preco", placeholder="Preço")
+		div(class="form-group")
+			label Negócio:
+			input(type="text", class="form-control", name="negocio", placeholder="Compra/Venda")
+			
+		button(type="submit", class="btn btn-success") Salvar
+		br
+		br
+		a(href="/mercadorias", class="btn btn-primary") Voltar
+

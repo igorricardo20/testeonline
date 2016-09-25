@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+	br
+	h1 #{dados.nome}
+	hr
+	p
+		b Tipo: #{dados.tipo}
+	p
+		b Quantidade: #{dados.quantidade}
+	p
+		b Preço: #{dados.preco}
+	p
+		b Tipo de negócio: #{dados.negocio}
+	p
+		b Data de cadastro: #{momento(dados.data_cadastro).format('DD/MM/YYYY HH:MM:ss')}
+	br
+	form(method="POST",action="/mercadorias/delete/#{dados._id}", role="form", id="excluir-form")
+		button(type="submit",class="btn btn-danger") Excluir
+	br
+	a(href="/mercadorias", class="btn btn-primary") Voltar
+
+block scripts
+	script(type="text/javascript").
+		$(function(){
+			$('#excluir-form').submit(function(){
+				var pergunta = confirm('Deseja realmente excluir?');
+				if(!pergunta){
+					return false;
+				}
+
+			});
+		});

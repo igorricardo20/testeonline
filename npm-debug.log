@@ -1,0 +1,262 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Walter\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'git-core' ]
+2 info using npm@1.3.24
+3 info using node@v4.5.0
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'git-core', null ]
+6 verbose cache add name=undefined spec="git-core" args=["git-core",null]
+7 verbose parsed url Url {
+7 verbose parsed url   protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'git-core',
+7 verbose parsed url   path: 'git-core',
+7 verbose parsed url   href: 'git-core' }
+8 silly lockFile 333bd993-git-core git-core
+9 verbose lock git-core C:\Users\Walter\AppData\Roaming\npm-cache\333bd993-git-core.lock
+10 silly lockFile 333bd993-git-core git-core
+11 silly lockFile 333bd993-git-core git-core
+12 verbose addNamed [ 'git-core', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 984c24cb-git-core git-core@
+15 verbose lock git-core@ C:\Users\Walter\AppData\Roaming\npm-cache\984c24cb-git-core.lock
+16 silly addNameRange { name: 'git-core', range: '*', hasData: false }
+17 verbose url raw git-core
+18 verbose url resolving [ 'https://registry.npmjs.org/', './git-core' ]
+19 verbose url resolved https://registry.npmjs.org/git-core
+20 info trying registry request attempt 1 at 12:31:46
+21 http GET https://registry.npmjs.org/git-core
+22 http 200 https://registry.npmjs.org/git-core
+23 silly registry.get cb [ 200,
+23 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"9BNYQNCNK6XX4EC3S7T3Q4V28"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=300',
+23 silly registry.get     'content-length': '21387',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Sun, 25 Sep 2016 15:31:43 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'close',
+23 silly registry.get     'x-served-by': 'cache-gru7124-GRU',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1474817503.053382,VS0,VE763',
+23 silly registry.get     vary: 'Accept-Encoding' } ]
+24 silly addNameRange number 2 { name: 'git-core', range: '*', hasData: true }
+25 silly addNameRange versions [ 'git-core', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4' ] ]
+26 verbose addNamed [ 'git-core', '0.0.4' ]
+27 verbose addNamed [ '0.0.4', '0.0.4' ]
+28 silly lockFile 20263ff5-git-core-0-0-4 git-core@0.0.4
+29 verbose lock git-core@0.0.4 C:\Users\Walter\AppData\Roaming\npm-cache\20263ff5-git-core-0-0-4.lock
+30 silly lockFile 8c5e0304--org-git-core-git-core-0-0-4-tgz https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz
+31 verbose lock https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz C:\Users\Walter\AppData\Roaming\npm-cache\8c5e0304--org-git-core-git-core-0-0-4-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz',
+32 verbose addRemoteTarball   'ee49c4b8c67926e7c4ee13482c06c8bfa94b2261' ]
+33 info retry fetch attempt 1 at 12:31:48
+34 verbose fetch to= C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz
+35 http GET https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz
+36 http 200 https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz
+37 verbose tar unpack C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz
+38 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+39 verbose lock tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package C:\Users\Walter\AppData\Roaming\npm-cache\7712a37e-08364-0-2804392264224589-package.lock
+40 silly lockFile 4ab30ec5-08364-0-2804392264224589-tmp-tgz tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz
+41 verbose lock tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz C:\Users\Walter\AppData\Roaming\npm-cache\4ab30ec5-08364-0-2804392264224589-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry binding.gyp
+47 silly gunzTarPerm extractEntry src/cpp/zlib.cpp
+48 silly gunzTarPerm extractEntry src/js/zlib.js
+49 silly gunzTarPerm extractEntry src/js/pack.js
+50 silly gunzTarPerm extractEntry src/js/common.js
+51 silly gunzTarPerm extractEntry src/js/index.js
+52 silly gunzTarPerm extractEntry src/js/delta.js
+53 silly gunzTarPerm extractEntry src/js/blob.js
+54 silly gunzTarPerm extractEntry src/js/tree.js
+55 silly gunzTarPerm extractEntry src/js/commit.js
+56 silly gunzTarPerm extractEntry src/js/tag.js
+57 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+58 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+59 silly lockFile 4ab30ec5-08364-0-2804392264224589-tmp-tgz tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz
+60 silly lockFile 4ab30ec5-08364-0-2804392264224589-tmp-tgz tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\tmp.tgz
+61 verbose tar pack [ 'C:\\Users\\Walter\\AppData\\Roaming\\npm-cache\\git-core\\0.0.4\\package.tgz',
+61 verbose tar pack   'C:\\Users\\Walter\\AppData\\Local\\Temp\\npm-4992-lqLr3c2N\\1474817508364-0.2804392264224589\\package' ]
+62 verbose tarball C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+63 verbose folder C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+64 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+65 verbose lock tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package C:\Users\Walter\AppData\Roaming\npm-cache\7712a37e-08364-0-2804392264224589-package.lock
+66 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+67 verbose lock tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz C:\Users\Walter\AppData\Roaming\npm-cache\bc49c3e8-cache-git-core-0-0-4-package-tgz.lock
+68 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+69 silly lockFile 7712a37e-08364-0-2804392264224589-package tar://C:\Users\Walter\AppData\Local\Temp\npm-4992-lqLr3c2N\1474817508364-0.2804392264224589\package
+70 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+71 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+72 silly lockFile 2b0781eb-npm-cache-git-core-0-0-4-package C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+73 verbose lock C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package C:\Users\Walter\AppData\Roaming\npm-cache\2b0781eb-npm-cache-git-core-0-0-4-package.lock
+74 silly lockFile 2b0781eb-npm-cache-git-core-0-0-4-package C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+75 silly lockFile 2b0781eb-npm-cache-git-core-0-0-4-package C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+76 verbose tar unpack C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+77 silly lockFile 9220e390-npm-cache-git-core-0-0-4-package tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+78 verbose lock tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package C:\Users\Walter\AppData\Roaming\npm-cache\9220e390-npm-cache-git-core-0-0-4-package.lock
+79 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+80 verbose lock tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz C:\Users\Walter\AppData\Roaming\npm-cache\bc49c3e8-cache-git-core-0-0-4-package-tgz.lock
+81 silly gunzTarPerm modes [ '755', '644' ]
+82 silly gunzTarPerm extractEntry package.json
+83 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+84 silly gunzTarPerm extractEntry .npmignore
+85 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+86 silly gunzTarPerm extractEntry README.md
+87 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+88 silly gunzTarPerm extractEntry binding.gyp
+89 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+90 silly gunzTarPerm extractEntry src/cpp/zlib.cpp
+91 silly gunzTarPerm modified mode [ 'src/cpp/zlib.cpp', 438, 420 ]
+92 silly gunzTarPerm extractEntry src/js/blob.js
+93 silly gunzTarPerm modified mode [ 'src/js/blob.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry src/js/commit.js
+95 silly gunzTarPerm modified mode [ 'src/js/commit.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry src/js/common.js
+97 silly gunzTarPerm modified mode [ 'src/js/common.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry src/js/delta.js
+99 silly gunzTarPerm modified mode [ 'src/js/delta.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry src/js/index.js
+101 silly gunzTarPerm modified mode [ 'src/js/index.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry src/js/pack.js
+103 silly gunzTarPerm modified mode [ 'src/js/pack.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry src/js/tag.js
+105 silly gunzTarPerm modified mode [ 'src/js/tag.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry src/js/tree.js
+107 silly gunzTarPerm modified mode [ 'src/js/tree.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry src/js/zlib.js
+109 silly gunzTarPerm modified mode [ 'src/js/zlib.js', 438, 420 ]
+110 silly lockFile 9220e390-npm-cache-git-core-0-0-4-package tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+111 silly lockFile 9220e390-npm-cache-git-core-0-0-4-package tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package
+112 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+113 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+114 verbose chmod C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz 644
+115 silly chown skipping for windows C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+116 silly lockFile 8c5e0304--org-git-core-git-core-0-0-4-tgz https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz
+117 silly lockFile 8c5e0304--org-git-core-git-core-0-0-4-tgz https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz
+118 silly lockFile 20263ff5-git-core-0-0-4 git-core@0.0.4
+119 silly lockFile 20263ff5-git-core-0-0-4 git-core@0.0.4
+120 silly lockFile 984c24cb-git-core git-core@
+121 silly lockFile 984c24cb-git-core git-core@
+122 silly resolved [ { name: 'git-core',
+122 silly resolved     version: '0.0.4',
+122 silly resolved     description: 'Simple library for working git core structures(blobs, trees, commits, tags and packs) without a repository',
+122 silly resolved     main: './src/js/index.js',
+122 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+122 silly resolved     repository:
+122 silly resolved      { type: 'git',
+122 silly resolved        url: 'git://github.com/tarruda/node-git-core.git' },
+122 silly resolved     keywords: [ 'git', 'git-objects' ],
+122 silly resolved     devDependencies:
+122 silly resolved      { 'node-gyp': '*',
+122 silly resolved        wrench: '*',
+122 silly resolved        less: '*',
+122 silly resolved        mocha: '*',
+122 silly resolved        chai: '*',
+122 silly resolved        temp: '*',
+122 silly resolved        glob: '*' },
+122 silly resolved     author: { name: 'Thiago de Arruda' },
+122 silly resolved     license: 'BSD',
+122 silly resolved     gypfile: true,
+122 silly resolved     readme: '### node-git-core\n\nLibrary that provides simple object-oriented api for working with git data at a\nlower level, see [git internals](http://git-scm.com/book/en/Git-Internals) for more info:\n\n#### Installation\n```sh\nnpm install git-core\n```\n\n#### Usage\n\n```js\ngit = require(\'git-core\');\nBlob = git.Blob;\nTree = git.Tree;\nCommit = git.Commit;\nTag = git.Tag;\nPack = git.Pack;\n\nb1 = new Blob(\'Some file\');\n\nb2 = new Blob(new Buffer([1,2,3,4,5])); // blob with binary data\n\nb3 = new Blob(\'Another file\\n\');\n\n// (For now file modes are not supported on trees, all blobs have mode 100644 and\n// subtrees have mode 040000)\n\nt1 = new Tree({\n  \'file-under-tree\': b3\n});\n\nt2 = new Tree({\n  \'some-file.txt\': b2,\n  \'some-file2.txt\': b1,\n  \'sub-directory.d\': t1\n});\n\nt3 = new Tree({\n  \'another-file.txt\': b1\n});\n\n// Lets create some commmits\n\nc1 = new Commit({\n  tree: t1,\n  author: {\n    name: \'Git Author\',\n    email: \'author@git.com\',\n    date: d1\n  },\n  message: \'Artificial commit 1\'\n});\n\nc2 = new Commit({\n  tree: t2,\n  author: {\n    name: \'Git Author\',\n    email: \'author@git.com\',\n    date: d2\n  },\n  message: \'Artificial commit 2\',\n  parents: [c1]\n});\n\nc3 = new Commit({\n  tree: t3,\n  author: {\n    name: \'Git User\',\n    email: \'user@domain.com\',\n    date: d3\n  },\n  committer: {\n    name: \'Git Commiter\',\n    email: \'committer@git.com\',\n    date: d4\n  },\n  message: \'Artificial commit 3\',\n  parents: [c2]\n});\n\ntag = new Tag({\n  object: c2,\n  name: \'v0.0.1\',\n  tagger: {\n    name: \'Git Tagger\',\n    email: \'tagger@git.com\'\n  },\n  date: d2,\n  message: \'Tag second commit\'\n});\n\n// Lets pack everything toguether\n\npack = new Pack([c3, tag]);\nserializedPack = pack.serialize(); // this is a git packfile\n\n// We only need to add a head to the pack, all other will be added\n// automatically when serializing\n```\n\nThis library is all about working with git data in-memory, no repositories are\nneeded. Above is an example\non how git objects can be created, connected and serialized, the inverse\nis also supported:\n\n```js\n// Lets say \'buffer\' contains a packfile data that you read from disk or\n// received from \'git-fetch-pack\'\n\npack = Pack.deserialize(buffer);\n\n// pack now contains a ready-to-use git object graph\n\n// print all blobs in the pack\nfor (var i = 0;i < pack.objects.length;i++) {\n  var obj = pack.objects[i];\n  if (obj instanceof Blob) {\n    console.log(obj.serialize().getHash(), \':\', obj.contents.toString()));\n  }\n}\n\n// deserialization of \'thin packs\' is also supported, you just have to pass a\n// callback as a second argument to \'deserialize\', which will be called with\n// the sha1 id whenever a base object is required\n\npack = Pack.deserialize(buffer, function(baseSha1) {\n  // fetch the object with \'baseSha1\' id from somewhere and return\n});\n```\n\nDelta compression is only fully supported on \'deserialization. If you need to\nencode objects using delta compression then add the deltas manually:\n\n```js\nstr = \'\';\nfor (i = _i = 0; _i < 1000; i = ++_i) {\n  str += \'test content/test content2/test content3\\n\';\n}\n\nb1 = new Blob(str);\nb2 = new Blob(str + \'append\\n\');\nb3 = new Blob(str + \'append\\nappend2\\n\');\nb4 = new Blob(str + \'append\\nappend2\\nappend3\\n\');\n\npack = new Pack([\n  b1,\n  b2.diff(b1),\n  b3.diff(b2),\n  b4.diff(b3)\n]);\npack.serialize();\n```\n',
+122 silly resolved     readmeFilename: 'README.md',
+122 silly resolved     bugs: { url: 'https://github.com/tarruda/node-git-core/issues' },
+122 silly resolved     homepage: 'https://github.com/tarruda/node-git-core',
+122 silly resolved     _id: 'git-core@0.0.4',
+122 silly resolved     dist: { shasum: '444dd5db1806bd910acb8751bd8334d5f1659cb1' },
+122 silly resolved     _from: 'git-core@',
+122 silly resolved     _resolved: 'https://registry.npmjs.org/git-core/-/git-core-0.0.4.tgz' } ]
+123 info install git-core@0.0.4 into C:\Users\Walter\Desktop\testeonline
+124 info installOne git-core@0.0.4
+125 info C:\Users\Walter\Desktop\testeonline\node_modules\git-core unbuild
+126 verbose tar unpack C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+127 silly lockFile 41688294-esteonline-node-modules-git-core tar://C:\Users\Walter\Desktop\testeonline\node_modules\git-core
+128 verbose lock tar://C:\Users\Walter\Desktop\testeonline\node_modules\git-core C:\Users\Walter\AppData\Roaming\npm-cache\41688294-esteonline-node-modules-git-core.lock
+129 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+130 verbose lock tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz C:\Users\Walter\AppData\Roaming\npm-cache\bc49c3e8-cache-git-core-0-0-4-package-tgz.lock
+131 silly gunzTarPerm modes [ '755', '644' ]
+132 silly gunzTarPerm extractEntry package.json
+133 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+134 silly gunzTarPerm extractEntry .npmignore
+135 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+136 silly gunzTarPerm extractEntry README.md
+137 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+138 silly gunzTarPerm extractEntry binding.gyp
+139 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+140 silly gunzTarPerm extractEntry src/cpp/zlib.cpp
+141 silly gunzTarPerm modified mode [ 'src/cpp/zlib.cpp', 438, 420 ]
+142 silly gunzTarPerm extractEntry src/js/blob.js
+143 silly gunzTarPerm modified mode [ 'src/js/blob.js', 438, 420 ]
+144 silly gunzTarPerm extractEntry src/js/commit.js
+145 silly gunzTarPerm modified mode [ 'src/js/commit.js', 438, 420 ]
+146 silly gunzTarPerm extractEntry src/js/common.js
+147 silly gunzTarPerm modified mode [ 'src/js/common.js', 438, 420 ]
+148 silly gunzTarPerm extractEntry src/js/delta.js
+149 silly gunzTarPerm modified mode [ 'src/js/delta.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry src/js/index.js
+151 silly gunzTarPerm modified mode [ 'src/js/index.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry src/js/pack.js
+153 silly gunzTarPerm modified mode [ 'src/js/pack.js', 438, 420 ]
+154 silly gunzTarPerm extractEntry src/js/tag.js
+155 silly gunzTarPerm modified mode [ 'src/js/tag.js', 438, 420 ]
+156 silly gunzTarPerm extractEntry src/js/tree.js
+157 silly gunzTarPerm modified mode [ 'src/js/tree.js', 438, 420 ]
+158 silly gunzTarPerm extractEntry src/js/zlib.js
+159 silly gunzTarPerm modified mode [ 'src/js/zlib.js', 438, 420 ]
+160 silly lockFile 41688294-esteonline-node-modules-git-core tar://C:\Users\Walter\Desktop\testeonline\node_modules\git-core
+161 silly lockFile 41688294-esteonline-node-modules-git-core tar://C:\Users\Walter\Desktop\testeonline\node_modules\git-core
+162 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+163 silly lockFile bc49c3e8-cache-git-core-0-0-4-package-tgz tar://C:\Users\Walter\AppData\Roaming\npm-cache\git-core\0.0.4\package.tgz
+164 info preinstall git-core@0.0.4
+165 verbose readDependencies using package.json deps
+166 verbose readDependencies using package.json deps
+167 silly resolved []
+168 verbose about to build C:\Users\Walter\Desktop\testeonline\node_modules\git-core
+169 info build C:\Users\Walter\Desktop\testeonline\node_modules\git-core
+170 verbose linkStuff [ false,
+170 verbose linkStuff   false,
+170 verbose linkStuff   false,
+170 verbose linkStuff   'C:\\Users\\Walter\\Desktop\\testeonline\\node_modules' ]
+171 info linkStuff git-core@0.0.4
+172 verbose linkBins git-core@0.0.4
+173 verbose linkMans git-core@0.0.4
+174 verbose rebuildBundles git-core@0.0.4
+175 info install git-core@0.0.4
+176 verbose unsafe-perm in lifecycle true
+177 info git-core@0.0.4 Failed to exec install script
+178 info C:\Users\Walter\Desktop\testeonline\node_modules\git-core unbuild
+179 info preuninstall git-core@0.0.4
+180 info uninstall git-core@0.0.4
+181 verbose true,C:\Users\Walter\Desktop\testeonline\node_modules,C:\Users\Walter\Desktop\testeonline\node_modules unbuild git-core@0.0.4
+182 info postuninstall git-core@0.0.4
+183 error git-core@0.0.4 install: `node-gyp rebuild`
+183 error Exit status 1
+184 error Failed at the git-core@0.0.4 install script.
+184 error This is most likely a problem with the git-core package,
+184 error not with npm itself.
+184 error Tell the author that this fails on your system:
+184 error     node-gyp rebuild
+184 error You can get their info via:
+184 error     npm owner ls git-core
+184 error There is likely additional logging output above.
+185 error System Windows_NT 10.0.10240
+186 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Walter\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "git-core"
+187 error cwd C:\Users\Walter\Desktop\testeonline
+188 error node -v v4.5.0
+189 error npm -v 1.3.24
+190 error code ELIFECYCLE
+191 verbose exit [ 1, true ]
